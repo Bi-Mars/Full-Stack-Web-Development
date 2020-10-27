@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Register Form</title>
+</head>
+
+<body>
+    <main>
+        <h1> Race Registration Form</h1>
+    </main>
+    <section>
+        <form action="/dummy">
+            <section>
+                <label for="fName"> First Name </label>
+                <input type="text" id="fName" placeholder="Provide your first name here" name="firstName" required>
+                <label for="lName"> Last Name</label>
+                <input type="text" id="lName" placeholder="Provide your last name here" name="lastName" required>
+            </section>
+
+            <section>
+                <p> Select a Race: </p>
+                <input type="radio" name="race-type" id="full-run" value="full-run">
+                <label for="full-run"> Fun Run 5k</label>
+                <input type="radio" name="race-type" id="half-marathon" value="half-marathon">
+                <label for="half-marathon"> Half-Marathon</label>
+                <input type="radio" name="race-type" id="full-marathon" value="full-marathon">
+                <label for="full-marathon"> Full Marathon</label>
+            </section>
+            <section>
+                <label for=email"> Email </label>
+                <input type="email" id="email" name="email" placeholder="Your email goes here" required>
+                <label for="password"> Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </section>
+
+            <section>
+                <label for="age-group"> Select Age Group</label>
+                <select name=age-group" id="age-group">
+                    <option value="under18"> Under 18 </option>
+                    <option value="18-30"> 18-30</option>
+                    <option value="30-50"> 30-50</option>
+                    <option value="50+"> 50+ </option>
+                </select>
+            </section>
+            <button> Register</button>
+        </form>
+    </section>
+
+
+</body>
+
+</html>

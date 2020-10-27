@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Table in HTML</title>
+</head>
+<h1> Working with tables in HTML</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th> Option Fundamentals </th>
+        </tr>
+        <thead>
+            <tr>
+                <th> Stock Ticker</th>
+
+                <th> Buy Call</th>
+                <th> Sell Call</th>
+
+                <th>Buy Put </th>
+                <th>Sell Put</th>
+
+                <th>Implied Volatility</th>
+                <th>Time till expiration (days) </th>
+                <th>Strike Price </th>
+                <th>Liquidity in Million</th>
+            </tr>
+        </thead>
+
+    </thead>
+
+
+    <tbody>
+        <tr>
+            <td>TSLA</td>
+            <td> No</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>No</td>
+            <td>97.5%</td>
+            <td>7</td>
+            <td>440</td>
+            <td>100M</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2> This is how we can span table into multiple columns and multiple rows</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="8"> Option Fundamentals </th>
+        </tr>
+        <tr>
+            <th rowspan="2"> Stock Ticker</th>
+            <th colspan="2"> CALL </th>
+            <th colspan="2"> PUT</th>
+            <th rowspan="2">Implied Volatility</th>
+            <th rowspan="2">Time till expiration (days) </th>
+            <th rowspan="2">Strike Price </th>
+            <th rowspan="2">Liquidity</th>
+        </tr>
+        <tr>
+            <th> Buy Call</th>
+            <th> Sell Call</th>
+            <th>Buy Put </th>
+            <th>Sell Put</th>
+        </tr>
+
+    </thead>
+
+
+    <tbody>
+        <tr>
+            <td>TSLA</td>
+            <td> No</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>97.5%</td>
+            <td>7</td>
+            <td>410</td>
+            <td>100M</td>
+        </tr>
+    </tbody>
+</table>
+
+<body>
+
+</body>
+
+</html>

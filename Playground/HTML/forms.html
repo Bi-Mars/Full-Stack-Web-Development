@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Forms</title>
+</head>
+
+<body>
+    <h1> Forms Demo </h1>
+    <form action="/tacos">
+        <button type="button"> Don't submit the form</button>
+        <label for="uname"> Enter a Username </label>
+        <input id="uname" name="username" type="text" placeholder="username">
+        <label for="pword"> Enter a Password </label>
+        <input id="pword" name="password" type="password" placeholder="password">
+        <button> In the middle</button>
+        <label for="color"> Choose your color </label>
+        <input id="color" name="color" type="color" placeholder="Color">
+        <label for="num"> Enter a number </label>
+        <input id="num" name="number" min="1" max="1000" type="number" placeholder=" Enter a number">
+        <button> Submit</button>
+    </form>
+    <hr>
+    <hr>
+    <h2> More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agress_tos" id="agree" checked>
+        <label for="agree"> I agree to everything</label>
+        <p>
+            <label for="xs"> XS: </label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s"> S: </label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="l"> L: </label>
+            <input type="radio" name="size" id="l" value="l">
+            <label for="xl"> XL: </label>
+            <input type="radio" name="size" id="xl" value="xl">
+        </p>
+        <p>
+            Please select an entree
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak" selected>Steak</option>
+                <option value="cake">Cake</option>
+            </select>
+
+        </p>
+
+        <p>
+            <label for="cheese"> Amount of Cheese</label>
+            <input type="range" id="cheese" min="1" max="10" value="3" step="2" name="cheese-level">
+        </p>
+
+        <p>
+            <label for="requests"> Any special request?</label>
+            <br>
+            <textarea id="requests" rows="10" cols="75" name="request">
+
+            </textarea>
+        </p>
+        <button> Click to submit</button>
+    </form>
+
+    <hr>
+    <hr>
+
+    <h2> Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first"> Enter First Name </label>
+        <input type="text" name="first" id="first" required>
+        <label for="username"> Username</label>
+        <input type="text" id="username" name="uname" minlength="5" maxlength="10" required>
+        <label for="email"> Email</label>
+        <input type="email" id="email" required>
+        <label for="url"> URL </label>
+        <input type="url" id="url">
+        <button> Submit</button>
+    </form>
+
+</body>
+
+</html>

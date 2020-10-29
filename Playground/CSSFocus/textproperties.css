@@ -1,0 +1,30 @@
+body {
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-decoration: #f24312 wavy underline;
+    letter-spacing: 8px;
+    font-size: 80px;
+    font-family: verdana, Futura, Arial;
+}
+
+p {
+    text-align: center;
+    font-weight: 650;
+    line-height: 2;
+    font-family: arial;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: monospace;
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-decoration: orange wavy underline;
+}

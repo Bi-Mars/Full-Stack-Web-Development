@@ -49,11 +49,6 @@ input[type="password"] {
     color: green;
 }
 
-.post button:hover {
-    background-color: #e63946;
-    color: #f1faee;
-}
-
 a:hover {
     text-decoration: wavy dotted;
     color: red;
@@ -75,6 +70,29 @@ p::first-line {
     color: darkorange;
 }
 
+/* part that is only selected will have background-color */
+
 p::selection {
     background-color: #fcbf49;
+}
+
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+button:hover {
+    background-color: olive;
+}
+
+.about h2.heading {
+    color: pink;
+}
+
+section.about.heading {
+    color: yellow;
+}
+
+button {
+    background-color: magenta !important;
 }
